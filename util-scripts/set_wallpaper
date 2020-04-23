@@ -1,0 +1,2 @@
+#!/bin/sh
+xwinwrap -g 1920x1080 -ov -- mpv -wid WID --no-osc --no-audio $1

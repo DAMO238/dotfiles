@@ -1,0 +1,16 @@
+// Colour definitions for i3 (arc-dark):
+
+*arc-dark-base-color: #404552
+*arc-dark-text-color: #d3dae3
+*arc-dark-bg-color: #383c4a
+*arc-dark-fg-color: #d3dae3
+*arc-dark-tooltip-bg-color: #4B5162
+*arc-dark-tooltip-fg-color: #ffffff
+*arc-dark-selected-bg-color: #5294e2
+*arc-dark-selected-fg-color: #ffffff
+*arc-dark-insensitive-bg-color: #3e4350
+*arc-dark-insensitive-fg-color: #7c818c
+*arc-dark-notebook-bg: #404552
+*arc-dark-dark-sidebar-bg: #353945
+*arc-dark-link-color: #5294e2
+*arc-dark-menu-bg: #383c4a

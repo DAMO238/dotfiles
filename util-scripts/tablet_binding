@@ -1,0 +1,20 @@
+#!/bin/sh
+
+case $1 in
+    "start")
+        [ -f ~/.xbindkeys.start ] && mv ~/.xbindkeysrc ~/.xbindkeys.stop && mv ~/.xbindkeys.start ~/.xbindkeysrc || echo "Already running, refreshing rc file..."
+        xbindkeys --poll-rc
+        ;;
+    "stop")
+        [ -f ~/.xbindkeys.stop ] && mv ~/.xbindkeysrc ~/.xbindkeys.start && mv ~/.xbindkeys.stop ~/.xbindkeysrc || echo "Already stopped, refreshing rc file..."
+        xbindkeys --poll-rc
+        ;;
+    "toggle")
+        [ -f ~/.xbindkeys.stop ] && mv ~/.xbindkeysrc ~/.xbindkeys.start && mv ~/.xbindkeys.stop ~/.xbindkeysrc || \
+		([ -f ~/.xbindkeys.start ] && mv ~/.xbindkeysrc ~/.xbindkeys.stop && mv ~/.xbindkeys.start ~/.xbindkeysrc)
+        xbindkeys --poll-rc
+        ;;
+    *)
+        echo "Usage: tablet_binding {start|stop|toggle}"
+esac
+

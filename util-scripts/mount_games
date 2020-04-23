@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+#[[ "$(ls -A /home/damien/Games)" ]] && mimic 'Drive already mounted' || mount -U 6e80b340-52a3-4a52-a7f1-11ac2feabd1a /home/damien/Games && mimic 'Successfully Mounted' || mimic 'Failed to mount drive'
+[[ "$(ls -A /home/damien/drive)" ]] && mimic 'Drive already mounted' || google-drive-ocamlfuse /home/damien/drive && mimic 'Successfully Mounted' || mimic 'Failed to mount drive'

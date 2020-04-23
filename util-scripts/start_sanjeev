@@ -1,0 +1,10 @@
+#!/bin/bash
+
+mycroft-start all
+konsole --hide-menubar --noclose -e zsh -c 'cd grpc_sanjeev; source .venv/bin/activate; python3.7 sanjeev_server.py; $SHELL' & disown
+#sleep 1
+#i3-msg move container to workspace number 10
+konsole --hide-menubar --noclose -e zsh -c 'cd grpc_sanjeev; source .venv/bin/activate; python3.7 sanjeev_facebook.py; $SHELL' & disown
+#sleep 1
+#i3-msg move container to workspace number 10
+
