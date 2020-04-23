@@ -25,6 +25,8 @@ autoload -Uz promptinit
 promptinit
 prompt bigfade
 
+setopt correct
+
 export TERMINAL=xterm
 export EDITOR=vim
 
